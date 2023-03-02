@@ -1,0 +1,7 @@
+.container {
+  width: 100%;
+  padding: 0 $space-2xl;
+  @include breakpoints-down(md) {
+    padding: 0 $space-md;
+  }
+}

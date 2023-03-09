@@ -1,8 +1,11 @@
 .nav {
   @include flex-properties(flex, space-between, center);
   padding: $space-md $space-xl;
-  background-color: $white;
   box-shadow: 10px -6px 9px 1px rgb(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  backdrop-filter: blur(80px);
   ul {
     display: flex;
     @include breakpoints-down(lg) {

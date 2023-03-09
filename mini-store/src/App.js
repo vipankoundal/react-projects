@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Categories from "./pages/Categories";
 import Home from "./pages/Home";
@@ -14,10 +15,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/product-detail" element={<ProductDetail />} />
+          <Route path="/productdetail/:id" element={<ProductDetail />} />
           <Route path="/categories" element={<Categories />} />
-          <Route path="/category-detail" element={<ProductDetail />} />
+          {/* <Route path="/category-detail" element={<ProductDetail />} /> */}
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
